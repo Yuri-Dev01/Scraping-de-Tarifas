@@ -9,10 +9,6 @@ from process_tariffs_v3 import process_tariffs
 import pandas as pd
 
 def download_pdf(url, save_path):
-    """
-    Baixa um PDF de uma URL e salva no caminho especificado
-    Usa o User-Agent específico que funciona com a TAG
-    """
     try:
         # User-Agent específico que funciona com a TAG
         headers = {
