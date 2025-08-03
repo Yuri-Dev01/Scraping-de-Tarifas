@@ -101,8 +101,7 @@ def extract_table_data(pdf_path):
                 elif len(tariffs) == 5:
                     # Caso específico da linha Interconexão -TECAB com dados parciais
                     # Primeira coluna é "Tarifa (R$/MMBTU)" - ignorar
-                    # Próximas 4 são Jan, Fev, Mar, Abr
-                    monthly_tariffs = tariffs[1:] + [None] * 8  # 4 valores + 8 None = 12 total
+                    monthly_tariffs = tariffs[1:] + [None] * 8
                 elif len(tariffs) > 5:
                     # Outros casos com dados parciais
                     monthly_tariffs = tariffs[1:]  # Ignorar primeiro valor

@@ -32,7 +32,6 @@ def extract_nts_data(pdf_path):
         # Verificar se a linha contém dados de entrada (linhas 10-17 do debug)
         if i >= 10 and i <= 17:
             # Processar dados de entrada
-            # Padrão: NOME_PONTO 0,0212 TARIFA_TRANSPORTE
             parts = re.split(r'\s+', line)
             if len(parts) >= 3:
                 # Encontrar onde começam os números
